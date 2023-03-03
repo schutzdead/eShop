@@ -9,7 +9,7 @@ export function RegroupAll () {
     const [yourCard, setYourCard] = useState([])
 
     return(
-    <BrowserRouter basename='/eShop'>
+    <BrowserRouter basename='/'>
     <Routes>
       <Route path="/" element={<App yourCard={yourCard} setYourCard={setYourCard}/>} />
       <Route path="/shop" element={<Shop yourCard={yourCard} setYourCard={setYourCard}/>} />

@@ -22,7 +22,7 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
         <div className="header">
             <Link to="/">
             <div className="logoHeader">
-                <img src="/src/components_first/assets/mainIcon.png" alt="" />
+                <img src="src/assets/assets_accueil/mainIcon.png" alt="" />
             </div>
             </Link>
             <div className="navBar">
@@ -33,8 +33,8 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
                     <div className="boutique">Boutique</div>
                 </Link>
                 <div className="shoppingBag">
-                    <img src="/src/components_first/assets/shoppingBag.svg" alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
-                    <img className='leftArrow' src="/src/components_first/assets/left.svg" alt="" />
+                    <img src="src/assets/assets_accueil/shoppingBag.svg" alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
+                    <img className='leftArrow' src="src/assets/assets_accueil/left.svg" alt="" />
                     <div className="count">{articleNumber}</div>
                 </div>
             </div>

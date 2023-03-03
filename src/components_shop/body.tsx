@@ -47,7 +47,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
 
     useEffect(() =>{
         const firstOne = document.querySelector(`.allImg`) as HTMLImageElement
-        firstOne.src = "./src/components_shop/assets/select.svg"
+        firstOne.src = "src/assets/assets_shop/select.svg"
 
         return()=>{
             firstOne.src = ""
@@ -73,7 +73,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
     function addStyleToCategory (element:any) {
         const stockName = element.target.className;
         const currentImg:any = document.querySelector(`.${stockName}Img`)        
-        currentImg.src = "./src/components_shop/assets/select.svg"
+        currentImg.src = "src/assets/assets_shop/select.svg"
     }
 
     function whichCategory (e:any) {
@@ -121,7 +121,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
 function Article(props:{article_number:number, setYourCard:any, yourCard:any, actualisation:any}) {
 
     const {article_number, setYourCard, yourCard, actualisation} = props 
-    const img_number = `./src/components_shop/assets/productsWebpResize/${article_number+358}.webp`
+    const img_number = `src/assets/assets_shop/productsWebpResize/${article_number+358}.webp`
 
     return (
         <div className="eachCard">

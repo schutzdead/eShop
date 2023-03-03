@@ -48,7 +48,7 @@ export function Card (props:{OnOrOff:boolean, setCardDisplay:any, yourCard:any, 
     return (
         <div className="containerCard">
             <div className='mainContainer'>
-                <div className="crossDiv"><img src="src/components_first/assets/close.svg" alt="" className="cross" onClick={()=>{turnOff();HTMLScroll()}}/></div>
+                <div className="crossDiv"><img src="src/assets/assets_accueil/close.svg" alt="" className="cross" onClick={()=>{turnOff();HTMLScroll()}}/></div>
                 <div className="titleCard"><span style={newdivStyle}>Votre</span> Panier</div>
                 <div className={checkOut ? "center" : "noCenter"}>
                     {yourCard.map((element:any)=>{
@@ -76,7 +76,6 @@ export function Card (props:{OnOrOff:boolean, setCardDisplay:any, yourCard:any, 
             </div>
             <div className='sail' onClick={()=>{turnOff();HTMLScroll()}} ></div>
         </div>
-
     )
 }
 
@@ -91,7 +90,7 @@ function EachArticleOnCard (props:{actualisation:any,
 
     const {idForPicture, titleCard, descriptionCard, priceCard, setYourCard, yourCard, setActualisation, actualisation} = props
     
-    const imgCard = `./src/components_shop/assets/productsWebpResize/${idForPicture}.webp`
+    const imgCard = `src/assets/assets_shop/productsWebpResize/${idForPicture}.webp`
     const articlesIndex:number = articles.findIndex((element:any) => element.title == titleCard);
     const articleQuantity = articles[articlesIndex];
 

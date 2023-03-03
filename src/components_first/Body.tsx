@@ -44,7 +44,7 @@ const Card = (props:{
     }
 
     const divStyle = {
-        backgroundImage: `url(src/components_first/assets/${cardImg})`,
+        backgroundImage: `url(src/assets/assets_accueil/${cardImg})`,
     };
 
     return (
@@ -72,7 +72,7 @@ const FirstCard = (props:{
     const {cardImg, name, description, activeFirst} = props
 
     const divStyle = {
-    backgroundImage: `url(src/components_first/assets/${cardImg})`,
+    backgroundImage: `url(src/assets/assets_accueil/${cardImg})`,
     };
 
     return (

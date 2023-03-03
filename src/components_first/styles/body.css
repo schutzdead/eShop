@@ -1,0 +1,114 @@
+.experience{
+    display: flex;
+    align-items: center;
+}
+
+.butcherName{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 190px;
+    padding-bottom: 80px;
+}
+
+
+.butcherName>span:nth-child(1){
+    font-size: 58px;
+}
+
+.butcherName>span:nth-child(2){
+    font-weight: 700;
+    font-size: 98px;
+    padding-top: 10px;
+}
+.butcherName>span:nth-child(2)>u{
+    text-underline-offset: 2.5rem;
+    text-decoration-thickness: 6px;
+}
+
+.butcherName>span:nth-child(3){
+    font-size: 14px;
+    padding-top: 70px;
+}
+
+.slide{
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.forBorder{
+    border-left: 30px solid white;
+}
+
+.card{
+    height: 400px;
+    width:400px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: 30% 0;
+    transition: width 1.5s;
+}
+
+.waitingCard{
+    height: 400px;
+    width:150px;
+    background-size: 400px;
+    border-radius: 10px;
+    background-position: 30% 0;
+    transition: width 1.5s;
+}
+
+.text{
+    margin-left: 40%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    gap:20px;
+    align-items: end;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+
+.waitingText{
+    margin-left: 40%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    color:white;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    gap:20px;
+    transition: opacity 1s;
+}
+
+.nameImg{
+    font-weight: 700;
+}
+
+.description{
+    font-size: 12px;
+    text-align: end;
+    width: 200px;
+    font-weight: 600;
+}
+
+.linkBody{
+    text-decoration: underline;
+    text-decoration-color:transparent;
+    color: transparent;
+}

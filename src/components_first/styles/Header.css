@@ -1,0 +1,73 @@
+.header{
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color:white;
+    height: 12vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: sticky;
+    top:0px;
+    z-index:1;
+}
+
+.logoHeader > img{
+    width: 130px;
+    height: auto;
+}
+
+.logoHeader{
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    gap:70px;
+    margin-right: 200px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 2px;
+    text-decoration-color:white;
+    transition: text-decoration-color 0.4s;
+}
+
+.link:hover{
+    text-decoration-color: black;
+}
+
+.shoppingBag>img{
+    cursor: pointer;
+}
+
+.shoppingBag{
+    display: flex;
+    align-items: center;
+}
+
+.leftArrow {
+    margin-left: -6px;
+    padding-bottom: 1px;
+}
+
+.count{
+    background-color: rgb(61, 201, 173);
+    width: 16px;
+    height: 14px;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+    font-size: 9px;
+    font-weight: 800;
+    margin-left: -10px;
+}

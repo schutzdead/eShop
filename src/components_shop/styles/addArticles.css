@@ -1,0 +1,41 @@
+.rightProps{
+    display: flex;
+    border-radius: 30px;
+    padding: 3px 7px;
+    background-color: rgb(173, 222, 201);
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.forAbsolute{
+    position: relative;
+    z-index: 0;
+    display: flex;
+}
+
+.less{
+    padding-right: 10px;
+}
+
+.plus{
+    padding-left: 10px;
+}
+
+.absolPlus, .absolLess{
+    position: absolute;
+    width: 22px;
+    height: 21px;
+    top:-3px;
+}
+
+.absolPlus{
+    left:2px;
+}
+
+.absolLess{
+    left:-7px;
+}

@@ -2,6 +2,9 @@ import './styles/Header.css'
 import { Link } from 'react-router-dom'
 import { Card } from './card'
 import { useEffect, useState } from 'react'
+import test from './assets/shoppingBag.svg'
+
+
 
 export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:any, actualisation:any}) => {
 
@@ -33,7 +36,7 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
                     <div className="boutique">Boutique</div>
                 </Link>
                 <div className="shoppingBag">
-                    <img src="src/assets/assets_accueil/shoppingBag.svg" alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
+                    <img src={test} alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
                     <img className='leftArrow' src="src/assets/assets_accueil/left.svg" alt="" />
                     <div className="count">{articleNumber}</div>
                 </div>

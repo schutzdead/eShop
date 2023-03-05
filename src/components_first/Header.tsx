@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Card } from './card'
 import { useEffect, useState } from 'react'
 import test from './assets/shoppingBag.svg'
+import test2 from './assets/mainIcon.png'
 
 
 
@@ -25,7 +26,7 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
         <div className="header">
             <Link to="/">
             <div className="logoHeader">
-                <img src="src/assets/assets_accueil/mainIcon.png" alt="" />
+                <img src={test2} alt="" />
             </div>
             </Link>
             <div className="navBar">

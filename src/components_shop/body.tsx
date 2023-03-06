@@ -3,6 +3,7 @@ import { articles } from './dataBase/products'
 import { useEffect, useState } from 'react';
 import { categoriesData } from './dataBase/categories';
 import { RemoveOrAdd } from './addArticles';
+import { Select } from '../assets/importShop';
 
 export function Body(props:{yourCard:any, setYourCard:any, actualisation:any}) {
 
@@ -47,7 +48,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
 
     useEffect(() =>{
         const firstOne = document.querySelector(`.allImg`) as HTMLImageElement
-        firstOne.src = "src/assets/assets_shop/select.svg"
+        firstOne.src = `${Select}`
 
         return()=>{
             firstOne.src = ""
@@ -121,7 +122,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
 function Article(props:{article_number:number, setYourCard:any, yourCard:any, actualisation:any}) {
 
     const {article_number, setYourCard, yourCard, actualisation} = props 
-    const img_number = `src/assets/assets_shop/productsWebpResize/${article_number+358}.webp`
+    const img_number = articles[article_number].img;
 
     return (
         <div className="eachCard">

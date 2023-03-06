@@ -2,8 +2,8 @@ import './styles/Header.css'
 import { Link } from 'react-router-dom'
 import { Card } from './card'
 import { useEffect, useState } from 'react'
-import test from './assets/shoppingBag.svg'
-import test2 from './assets/mainIcon.png'
+import { Logo, Left, Bag } from "../assets/importAccueil"
+
 
 
 
@@ -26,7 +26,7 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
         <div className="header">
             <Link to="/">
             <div className="logoHeader">
-                <img src={test2} alt="" />
+                <img src={Logo} alt="" />
             </div>
             </Link>
             <div className="navBar">
@@ -37,8 +37,8 @@ export const Header = (props:{yourCard:any, setYourCard:any, setActualisation:an
                     <div className="boutique">Boutique</div>
                 </Link>
                 <div className="shoppingBag">
-                    <img src={test} alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
-                    <img className='leftArrow' src="src/assets/assets_accueil/left.svg" alt="" />
+                    <img src={Bag} alt="" onClick={()=>{turnOnOff();HTMLScroll()}}/>
+                    <img className='leftArrow' src={Left} alt="" />
                     <div className="count">{articleNumber}</div>
                 </div>
             </div>

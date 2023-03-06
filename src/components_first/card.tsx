@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './styles/card.css'
 import { articles } from '../components_shop/dataBase/products';
 import { HTMLScroll } from './Header';
+import { Close } from '../assets/importAccueil';
 
 export function Card (props:{OnOrOff:boolean, setCardDisplay:any, yourCard:any, setYourCard:any, setActualisation:any, actualisation:any}) {
 
@@ -48,7 +49,7 @@ export function Card (props:{OnOrOff:boolean, setCardDisplay:any, yourCard:any, 
     return (
         <div className="containerCard">
             <div className='mainContainer'>
-                <div className="crossDiv"><img src="src/assets/assets_accueil/close.svg" alt="" className="cross" onClick={()=>{turnOff();HTMLScroll()}}/></div>
+                <div className="crossDiv"><img src={Close} alt="" className="cross" onClick={()=>{turnOff();HTMLScroll()}}/></div>
                 <div className="titleCard"><span style={newdivStyle}>Votre</span> Panier</div>
                 <div className={checkOut ? "center" : "noCenter"}>
                     {yourCard.map((element:any)=>{
@@ -90,7 +91,7 @@ function EachArticleOnCard (props:{actualisation:any,
 
     const {idForPicture, titleCard, descriptionCard, priceCard, setYourCard, yourCard, setActualisation, actualisation} = props
     
-    const imgCard = `src/assets/assets_shop/productsWebpResize/${idForPicture}.webp`
+    const imgCard = articles[idForPicture-358].img;
     const articlesIndex:number = articles.findIndex((element:any) => element.title == titleCard);
     const articleQuantity = articles[articlesIndex];
 

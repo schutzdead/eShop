@@ -115,8 +115,8 @@
     display:flex;
     font-size: 12px;
     gap: 40px;
-    justify-content: center;
     align-items: center;
+    margin-left: 110px;
 }
 
 .titleBag{

@@ -1,11 +1,8 @@
-
-
 .footer{
     background-size: 210vh;
     background-repeat: no-repeat;
     background-position: 0 80%;
     width: 100%;
-
     display:grid;
     grid-template: 1fr / repeat(2,1fr);
     color: white;
@@ -35,3 +32,21 @@
     gap:5px;
 
 }
+
+@media (max-width:500px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftSide{
+        align-self: center;
+    }
+
+    .rightSide{
+        gap:0;
+        margin:0;
+    }
+}
+
+

@@ -1,5 +1,5 @@
 export const categoriesData = [
-    {id:1, category:"all", text:"Tous nos produits"},
+    {id:1, category:"all", text:"Tous"},
     {id:2, category:"beef", text:"Viandes rouges"},
     {id:3, category:"chicken", text:"Viandes blanche"},
     {id:4, category:"calf", text:"Veau"},

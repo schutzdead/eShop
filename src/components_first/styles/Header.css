@@ -13,7 +13,7 @@
 }
 
 .logoHeader > img{
-    width: 130px;
+    width: clamp(80px,40vw,135px);
     height: auto;
 }
 
@@ -70,4 +70,25 @@
     font-size: 9px;
     font-weight: 800;
     margin-left: -10px;
+}
+
+@media (max-width: 500px) {
+    .header{
+        flex-direction: column;
+        gap:0.5rem;
+        height: auto;
+        margin-top: 1rem;
+        padding:0;
+        position: unset;
+    }
+
+    .navBar{
+        margin:unset;
+        gap: 4rem;
+    }
+
+    .logoHeader{
+        margin:unset;
+        margin-bottom: 1rem;
+    }
 }

@@ -101,3 +101,48 @@
     align-items: center;
     gap:10px
 }
+
+@media (max-width:500px){
+    .categories{
+        position:initial;
+        flex-direction: row;
+        overflow-x: scroll;
+        margin:0 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        
+    }
+
+    .containerArticles{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .titleCategories{
+        display: none;
+    }
+
+    .globalArticles{
+        padding-top:30px;
+        gap:2rem;
+        align-items: center;
+        width: auto;
+    }
+
+    .articles{
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .eachCard>img{
+        width: 150px;
+    }
+    
+    .descriptionArt{
+        width: 130px;
+        justify-content: flex-end;
+        height: 110px;
+    }
+
+}

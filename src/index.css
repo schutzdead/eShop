@@ -12,3 +12,9 @@ body{
     left: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 500px) {
+ body{
+    position:unset
+ }
+}

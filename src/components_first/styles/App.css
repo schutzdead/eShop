@@ -4,10 +4,20 @@
 }
 
 .experience{
-    height:64vh;
+    height:61vh;
 }
 
 .footer{
-    height: 24vh;
+    height: 27vh;
 }
 
+@media (max-width: 500px) {
+    .experience{
+       height: auto;
+    }
+
+    .footer{
+       height: auto;
+    }
+
+}

@@ -1,24 +1,23 @@
 .experience{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 
 .butcherName{
-    width: 43%;
+    width: 40vw;
     display: flex;
     flex-direction: column;
-    padding-left: 190px;
-    padding-bottom: 80px;
 }
 
-
 .butcherName>span:nth-child(1){
-    font-size: 58px;
+    font-size: min(4.5vw, 58px);
 }
 
 .butcherName>span:nth-child(2){
     font-weight: 700;
-    font-size: 98px;
+    font-size: min(8.3vw,98px);
     padding-top: 10px;
 }
 .butcherName>span:nth-child(2)>u{
@@ -33,7 +32,6 @@
 
 .slide{
     display: flex;
-    padding-bottom: 60px;
 }
 
 .forBorder{
@@ -41,9 +39,9 @@
 }
 
 .card{
-    height: 400px;
-    width:400px;
-    background-size: 400px;
+    height: clamp(280px, 57vw,400px);
+    width: clamp(280px, 57vw,400px);
+    background-size: clamp(280px, 57vw,400px);
     background-repeat: no-repeat;
     border-radius: 10px;
     background-position: 30% 0;
@@ -51,9 +49,9 @@
 }
 
 .waitingCard{
-    height: 400px;
-    width:150px;
-    background-size: 400px;
+    height: clamp(280px, 57vw,400px);
+    width:clamp(105px, 21vw, 150px);
+    background-size: clamp(280px, 57vw,400px);
     border-radius: 10px;
     background-position: 30% 0;
     transition: width 1.5s;
@@ -111,4 +109,38 @@
     text-decoration: underline;
     text-decoration-color:transparent;
     color: transparent;
+}
+
+@media (max-width: 500px) {
+    .experience{
+       flex-direction: column; 
+       padding:3rem 0;
+    }
+
+    .butcherName{
+        width: auto;
+        background-color: rgb(173, 222, 201);
+        padding: 2rem;
+    }
+
+    .slide{
+        flex-direction: column;
+        gap:30px;
+        padding-top:3rem;
+    }
+
+    .forBorder{
+        border:none
+    }
+
+    .waitingCard{
+        width: clamp(280px, 57vw,400px);
+        transition: none;
+    }
+
+    .waitingText{
+        align-items: end;
+        transition: none;
+        opacity: 1;
+    }
 }

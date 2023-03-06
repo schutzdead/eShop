@@ -74,7 +74,7 @@ function Category(props:{name:string, text:string, setArticleData:any, setCurren
     function addStyleToCategory (element:any) {
         const stockName = element.target.className;
         const currentImg:any = document.querySelector(`.${stockName}Img`)        
-        currentImg.src = "src/assets/assets_shop/select.svg"
+        currentImg.src = `${Select}`
     }
 
     function whichCategory (e:any) {

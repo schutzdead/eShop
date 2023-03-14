@@ -8,7 +8,7 @@
 .titleCategories{
     font-weight: 700;
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vh;
     text-decoration: underline;
     text-underline-offset: 0.6rem;
     margin-left: 10px;
@@ -19,7 +19,7 @@
     margin-left: 80px;
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap:3.5vh;
     font-size: 16px;
 }
 
@@ -144,5 +144,9 @@
         justify-content: flex-end;
         height: 110px;
     }
+
+}
+
+@media (max-height:900) {
 
 }

@@ -6,7 +6,7 @@
 
 
 .butcherName{
-    width: 40vw;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -32,6 +32,7 @@
 
 .slide{
     display: flex;
+    width: 40%;
 }
 
 .forBorder{
@@ -39,9 +40,9 @@
 }
 
 .card{
-    height: clamp(280px, 57vw,400px);
-    width: clamp(280px, 57vw,400px);
-    background-size: clamp(280px, 57vw,400px);
+    height: clamp(280px, 30vw,400px);
+    width: clamp(280px, 30vw,400px);
+    background-size: clamp(280px, 30vw,400px);
     background-repeat: no-repeat;
     border-radius: 10px;
     background-position: 30% 0;
@@ -49,9 +50,9 @@
 }
 
 .waitingCard{
-    height: clamp(280px, 57vw,400px);
-    width:clamp(105px, 21vw, 150px);
-    background-size: clamp(280px, 57vw,400px);
+    height: clamp(280px, 30vw,400px);
+    width:clamp(105px, 11vw, 150px);
+    background-size: clamp(280px, 30vw,400px);
     border-radius: 10px;
     background-position: 30% 0;
     transition: width 1.5s;
@@ -127,6 +128,7 @@
         flex-direction: column;
         gap:30px;
         padding-top:3rem;
+        width: auto;
     }
 
     .forBorder{
@@ -142,5 +144,17 @@
         align-items: end;
         transition: none;
         opacity: 1;
+    }
+}
+
+@media (min-width:500px) and (max-width: 1400px) {
+    .experience{
+        flex-direction: column;
+        padding:6rem 0;
+        gap:5rem;
+    }
+
+    .slide, .butcherName{
+        width:auto;
     }
 }
